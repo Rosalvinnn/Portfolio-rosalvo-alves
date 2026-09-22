@@ -404,7 +404,7 @@ export default function Home() {
               construção, assim como minha jornada na tecnologia.
             </p>
           </div>
-          <a href="www.linkedin.com/in/rosalvo-alves-de-oliveira-filho" className="button button-primary">
+          <a href="https://www.linkedin.com/in/rosalvo-alves-de-oliveira-filho" className="button button-primary">
             linkedin <span>↗</span>
           </a>
         </div>
