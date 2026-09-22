@@ -320,19 +320,22 @@ export default function Home() {
 
             <div className="project-info">
               <div className="project-type">BANCO DE DADOS</div>
+
               <h3>Sistema de Clínica</h3>
+
               <p>
                 Modelagem de um banco de dados para organizar
                 pacientes, médicos, consultas e receitas.
               </p>
-            </div>
+
               <div className="tag-list">
                 <span>MySQL</span>
                 <span>SQL</span>
                 <span>Modelagem</span>
               </div>
-          </article>
-
+            </div>
+            </article>
+            
           <article className="project-card">
             <div className="project-art project-art-one">
               <div className="project-window">
