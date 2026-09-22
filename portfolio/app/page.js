@@ -29,19 +29,21 @@ export default function Home() {
             Disponível para aprender e criar
           </div>
 
-          <p className="eyebrow">OLÁ, MEU NOME É</p>
 
-          <h1>
-            Rosalvo Alves
-            <br />
-            <span>Desenvolvedor em formação.</span>
-          </h1>
+            <p className="eyebrow">OLÁ, MEU NOME É</p>
 
-          <p className="hero-description">
-            Sou estudante de tecnologia e gosto de transformar ideias em
-            projetos. Este espaço reúne um pouco sobre mim, minhas habilidades
-            e coisas que venho desenvolvendo.
-          </p>
+            <h1>
+              Rosalvo Alves
+              <br />
+              <span>Desenvolvedor em formação.</span>
+            </h1>
+
+            <p className="hero-description">
+          Sou estudante de tecnologia da Universidade Católica de
+          Pernambuco (UNICAP), com interesse em desenvolvimento de
+          software, programação e criação de sistemas. Este portfólio
+          reúne meus projetos, competências e experiências acadêmicas.
+            </p>
 
           <div className="hero-buttons">
             <a href="#projetos" className="button button-primary">
@@ -155,45 +157,78 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section skills-section" id="habilidades">
-        <div className="section-heading">
-          <p className="eyebrow">02 — O QUE ESTOU EXPLORANDO</p>
-          <h2>Minhas <span>habilidades.</span></h2>
-          <p className="section-description">
-            Tecnologias e áreas que fazem parte da minha jornada de aprendizado.
+
+    <section className="section skills-section" id="habilidades">
+      <div className="section-heading">
+        <p className="eyebrow">02 — O QUE ESTOU EXPLORANDO</p>
+        <h2>Minhas <span>competências.</span></h2>
+        <p className="section-description">
+          Tecnologias e ferramentas que fazem parte da minha
+          formação acadêmica e da minha jornada como desenvolvedor.
+        </p>
+      </div>
+
+      <div className="skills-grid">
+        <article className="skill-card">
+          <div className="skill-icon skill-orange">{"</>"}</div>
+          <h3>Desenvolvimento Web</h3>
+          <p>
+            Criação de interfaces e aplicações web utilizando
+            tecnologias modernas de desenvolvimento.
           </p>
-        </div>
+          <div className="tag-list">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>React</span>
+            <span>Next.js</span>
+          </div>
+        </article>
 
-        <div className="skills-grid">
-          <article className="skill-card">
-            <div className="skill-icon skill-orange">{"</>"}</div>
-            <h3>Desenvolvimento Web</h3>
-            <p>Criação de páginas e interfaces com tecnologias web.</p>
-            <div className="tag-list"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-          </article>
+        <article className="skill-card">
+          <div className="skill-icon skill-blue">☕</div>
+          <h3>Programação</h3>
+          <p>
+            Desenvolvimento de programas e aplicações,
+            com foco em lógica de programação e orientação a objetos.
+          </p>
+          <div className="tag-list">
+            <span>Python</span>
+            <span>C</span>
+            <span>C++</span>
+            <span>Java</span>
+          </div>
+        </article>
 
-          <article className="skill-card">
-            <div className="skill-icon skill-blue">☕</div>
-            <h3>Programação</h3>
-            <p>Lógica, orientação a objetos e desenvolvimento de aplicações.</p>
-            <div className="tag-list"><span>Java</span><span>Python</span><span>C</span></div>
-          </article>
+    <article className="skill-card">
+      <div className="skill-icon skill-purple">⌘</div>
+      <h3>Back-end</h3>
+      <p>
+        Desenvolvimento da lógica de aplicações e criação
+        de sistemas utilizando frameworks e ferramentas back-end.
+      </p>
+      <div className="tag-list">
+        <span>Flask</span>
+        <span>Spring Boot</span>
+        <span>Java</span>
+      </div>
+    </article>
 
-          <article className="skill-card">
-            <div className="skill-icon skill-purple">⌘</div>
-            <h3>Robótica</h3>
-            <p>Projetos com sensores, automação e sistemas embarcados.</p>
-            <div className="tag-list"><span>Arduino</span><span>Eletrônica</span></div>
-          </article>
+    <article className="skill-card">
+      <div className="skill-icon skill-green">▤</div>
+      <h3>Banco de Dados</h3>
+      <p>
+        Organização, modelagem e gerenciamento de dados
+        para aplicações e sistemas.
+      </p>
+      <div className="tag-list">
+        <span>MySQL</span>
+        <span>SQL</span>
+      </div>
+    </article>
+  </div>
+</section>
 
-          <article className="skill-card">
-            <div className="skill-icon skill-green">▤</div>
-            <h3>Banco de Dados</h3>
-            <p>Organização de dados, modelagem e consultas SQL.</p>
-            <div className="tag-list"><span>MySQL</span><span>SQL</span></div>
-          </article>
-        </div>
-      </section>
 
       <section className="section projects-section" id="projetos">
         <div className="section-heading">
@@ -205,6 +240,7 @@ export default function Home() {
         </div>
 
         <div className="projects-grid">
+
           <article className="project-card">
             <div className="project-art project-art-one">
               <div className="project-window">
@@ -213,17 +249,28 @@ export default function Home() {
                 <span className="project-art-label">WEB DEVELOPMENT</span>
               </div>
             </div>
+
             <div className="project-info">
               <div className="project-type">DESENVOLVIMENTO WEB</div>
               <h3>Jogo de Dados</h3>
               <p>
-                Um jogo para dois participantes, com rodadas, lançamento de
-                dados e contagem de vitórias.
+                Um jogo para dois participantes, com cinco rodadas,
+                lançamento de dados e contagem de vitórias.
               </p>
-              <div className="tag-list"><span>Next.js</span><span>JavaScript</span></div>
-              <Link href="/forca" className="project-link">
-                Conhecer outro jogo <span>↗</span>
-              </Link>
+              <div className="tag-list">
+                <span>Next.js</span>
+                <span>JavaScript</span>
+                <span>CSS</span>
+              </div>
+
+              <a
+                href="https://github.com/Rosalvinnn/Jogo-de-Dados"
+                className="project-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ver no GitHub <span>↗</span>
+              </a>
             </div>
           </article>
 
@@ -236,15 +283,28 @@ export default function Home() {
               </div>
               <span className="project-art-label">ROBOTICS & AUTOMATION</span>
             </div>
+
             <div className="project-info">
               <div className="project-type">ROBÓTICA</div>
               <h3>Portão com RFID</h3>
               <p>
-                Projeto de automação de uma maquete de portão, utilizando
-                identificação por cartão RFID e Arduino.
+                Projeto de automação de uma maquete de portão,
+                utilizando identificação por cartão RFID e Arduino.
               </p>
-              <div className="tag-list"><span>Arduino</span><span>RFID</span><span>Automação</span></div>
-              <span className="project-note">Projeto acadêmico</span>
+              <div className="tag-list">
+                <span>Arduino</span>
+                <span>RFID</span>
+                <span>Automação</span>
+              </div>
+
+              <a
+                href="https://github.com/Rosalvinnn/Sistema_De_Controle_De_Acesso_RFID/tree/main"
+                className="project-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ver no GitHub <span>↗</span>
+              </a>
             </div>
           </article>
 
@@ -257,46 +317,80 @@ export default function Home() {
               </div>
               <span className="project-art-label">DATA & STRUCTURE</span>
             </div>
+          </article>
+
+          <article className="project-card">
+            <div className="project-art project-art-one">
+              <div className="project-window">
+                <span className="project-window-dots">● ● ●</span>
+                <div className="project-illustration">{"{ DNS }"}</div>
+                <span className="project-art-label">COMPUTER NETWORKS</span>
+              </div>
+            </div>
+
             <div className="project-info">
-              <div className="project-type">BANCO DE DADOS</div>
-              <h3>Sistema de Clínica</h3>
+              <div className="project-type">REDES DE COMPUTADORES</div>
+              <h3>Prática com DNS</h3>
               <p>
-                Modelagem de um banco de dados para organizar pacientes,
-                médicos, consultas e receitas.
+                Projeto acadêmico de redes que explora a resolução
+                de nomes de domínio e a configuração de um ambiente
+                local para acessar um portal utilizando um domínio.
               </p>
-              <div className="tag-list"><span>MySQL</span><span>SQL</span><span>Modelagem</span></div>
-              <span className="project-note">Projeto acadêmico</span>
+              <div className="tag-list">
+                <span>DNS</span>
+                <span>Flask</span>
+                <span>Python</span>
+                <span>MySQL</span>
+              </div>
+
+              <a
+                href="https://github.com/C3NEXT/redes-computadores-dns"
+                className="project-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ver no GitHub <span>↗</span>
+              </a>
             </div>
           </article>
-        </div>
-      </section>
 
-      <section className="game-cta">
-        <div className="game-cta-decoration">?</div>
-        <div className="game-cta-content">
-          <p className="eyebrow">UM DESAFIO PARA VOCÊ</p>
-          <h2>Hora de testar<br />seu <span>vocabulário.</span></h2>
-          <p>
-            Descubra a palavra secreta antes que suas tentativas acabem.
-            Você consegue vencer o jogo da forca?
-          </p>
-          <Link href="/forca" className="button button-light">
-            Jogar agora <span>↗</span>
-          </Link>
-        </div>
-        <div className="game-cta-art">
-          <div className="hangman-mini">
-            <div className="mini-post"></div>
-            <div className="mini-beam"></div>
-            <div className="mini-rope"></div>
-            <div className="mini-head"></div>
-            <div className="mini-body"></div>
-            <div className="mini-arm-left"></div>
-            <div className="mini-arm-right"></div>
-            <div className="mini-leg-left"></div>
-            <div className="mini-leg-right"></div>
-            <div className="mini-base"></div>
-          </div>
+          <article className="project-card">
+            <div className="project-art project-art-three">
+              <div className="database-illustration">
+                <div className="db-layer"></div>
+                <div className="db-layer"></div>
+                <div className="db-layer"></div>
+              </div>
+              <span className="project-art-label">FULL STACK DEVELOPMENT</span>
+            </div>
+
+            <div className="project-info">
+              <div className="project-type">DESENVOLVIMENTO FULL STACK</div>
+              <h3>Sistema de Concessionária</h3>
+              <p>
+                Sistema para gerenciamento de uma concessionária,
+                integrando interface front-end, lógica back-end
+                e banco de dados para organizar veículos,
+                usuários e vendas.
+              </p>
+              <div className="tag-list">
+                <span>Front-end</span>
+                <span>Back-end</span>
+                <span>Banco de Dados</span>
+                <span>SQL</span>
+              </div>
+
+              <a
+                href="https://github.com/NextCar-Project/projeto-next-car"
+                className="project-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ver no GitHub <span>↗</span>
+              </a>
+            </div>
+          </article>
+
         </div>
       </section>
 
@@ -310,8 +404,8 @@ export default function Home() {
               construção, assim como minha jornada na tecnologia.
             </p>
           </div>
-          <a href="mailto:seuemail@exemplo.com" className="button button-primary">
-            Entre em contato <span>↗</span>
+          <a href="www.linkedin.com/in/rosalvo-alves-de-oliveira-filho" className="button button-primary">
+            linkedin <span>↗</span>
           </a>
         </div>
       </section>
