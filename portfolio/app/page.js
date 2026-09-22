@@ -325,7 +325,7 @@ export default function Home() {
                 Modelagem de um banco de dados para organizar
                 pacientes, médicos, consultas e receitas.
               </p>
-              </div>
+            </div>
               <div className="tag-list">
                 <span>MySQL</span>
                 <span>SQL</span>
