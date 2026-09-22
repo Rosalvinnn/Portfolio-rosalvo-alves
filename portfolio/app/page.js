@@ -335,7 +335,7 @@ export default function Home() {
               </div>
             </div>
             </article>
-            
+
           <article className="project-card">
             <div className="project-art project-art-one">
               <div className="project-window">
@@ -405,6 +405,39 @@ export default function Home() {
               >
                 Ver no GitHub <span>↗</span>
               </a>
+            </div>
+          </article>
+
+          <article className="project-card">
+            <div className="project-art project-art-one">
+              <div className="project-window">
+                <span className="project-window-dots">● ● ●</span>
+                <div className="project-illustration">?</div>
+                <span className="project-art-label">WORD GAME</span>
+              </div>
+            </div>
+
+            <div className="project-info">
+              <div className="project-type">JOGO INTERATIVO</div>
+
+              <h3>Jogo da Forca</h3>
+
+              <p>
+                Um jogo interativo em que o jogador precisa descobrir
+                a palavra secreta antes que suas tentativas acabem.
+                Desenvolvido para praticar lógica de programação
+                e desenvolvimento web.
+              </p>
+
+              <div className="tag-list">
+                <span>Next.js</span>
+                <span>JavaScript</span>
+                <span>CSS</span>
+              </div>
+
+              <Link href="/forca" className="project-link">
+                Jogar agora <span>↗</span>
+              </Link>
             </div>
           </article>
 
